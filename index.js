@@ -1,9 +1,7 @@
-class Cliente {
-    nome;
-    cpf;
-}
+import { Cliente } from "./Cliente.js"
+import { ContaCorrente } from "./ContaCorrente.js"
 
-class ContaCorrente {
+/* class ContaCorrente {
     agencia;
     cliente;
     _saldo = 0;
@@ -27,11 +25,12 @@ class ContaCorrente {
         const valorSacado = this.sacar(valor);
         conta.depositar(valorSacado);
     }
-}
+} 
+*/
 
 const cliente1 = new Cliente()
 cliente1.nome = "Ricardo";
-cliente1.cpf = 0001112223;
+cliente1.cpf = '0001112223';
 
 const contaCorrenteRicardo = new ContaCorrente()
 contaCorrenteRicardo.agencia = 1001;
@@ -40,13 +39,13 @@ contaCorrenteRicardo._saldo = 100;
 
 const cliente2 = new Cliente()
 cliente2.nome = "Alice";
-cliente2.cpf = 0001112224;
+cliente2.cpf = '0001112224';
 
 const conta2 = new ContaCorrente()
 conta2.agencia = 1002;
 conta2.cliente = cliente2;
 conta2._saldo = 500;
 
-conta2.transferir(150, contaCorrenteRicardo)
-console.log(conta2._saldo)
+console.log(conta2)
 console.log(contaCorrenteRicardo)
+

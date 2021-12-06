@@ -7,6 +7,18 @@ class ContaCorrente {
     agencia;
     cliente;
     _saldo = 0;
+
+    // SEM VER -- CRIAÇÃO DOS MÉTODOS sacar() depositar() e transferir()
+
+    sacar(valor){
+        if(this._saldo < valor) return;
+        this._saldo -= valor;
+    }
+    depositar(valor){
+        if(valor > 0){
+            return this._saldo += valor; 
+        }
+    }
 }
 
 const cliente1 = new Cliente()
@@ -17,5 +29,8 @@ const contaCorrenteRicardo = new ContaCorrente()
 contaCorrenteRicardo.agencia = 1001;
 contaCorrenteRicardo.cliente = cliente1;
 contaCorrenteRicardo._saldo = 100;
+contaCorrenteRicardo.sacar(51);
+contaCorrenteRicardo.depositar(151);
+
 
 console.log(contaCorrenteRicardo)

@@ -46,6 +46,18 @@ conta2.agencia = 1002;
 conta2.cliente = cliente2;
 conta2._saldo = 500;
 
-console.log(conta2)
-console.log(contaCorrenteRicardo)
+console.log(`Alice tem ${conta2._saldo}`);
+console.log(`Ricardo tem ${contaCorrenteRicardo._saldo}`)
+console.log('AGORA APÓS O SAQUE DE 100 DA ALICE E O DEPOSITO DE 200 DO RICARDO')
+conta2.sacar(100);
+contaCorrenteRicardo.depositar(200);
+console.log('   ');
+console.log(`Alice tem ${conta2._saldo}`);
+console.log(`Ricardo tem ${contaCorrenteRicardo._saldo}`)
+console.log('   ');
+console.log('TRANSFERENCIA DE ALICE PARA RICARDO (250)');
+conta2.transferir(250, contaCorrenteRicardo);
+console.log(`Alice tem ${conta2._saldo}`);
+console.log(`Ricardo tem ${contaCorrenteRicardo._saldo}`)
+
 

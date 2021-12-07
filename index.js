@@ -1,33 +1,6 @@
 import { Cliente } from "./Cliente.js"
 import { ContaCorrente } from "./ContaCorrente.js"
 
-/* class ContaCorrente {
-    agencia;
-    cliente;
-    _saldo = 0;
-
-    // SEM VER -- CRIAÇÃO DOS MÉTODOS sacar() depositar()
-    // SEM VER -- CRIAÇÃO DE UM NOVO CLIENTE E UMA NOVA CONTA E MÉTODO transferir()
-
-    sacar(valor){
-        if(this._saldo >= valor){
-        this._saldo -= valor;
-        return valor;
-        }
-    }
-    depositar(valor){
-        if(valor <= 0){ 
-            return;
-        }
-            this._saldo += valor;
-    }
-    transferir(valor, conta){
-        const valorSacado = this.sacar(valor);
-        conta.depositar(valorSacado);
-    }
-} 
-*/
-
 const cliente1 = new Cliente()
 cliente1.nome = "Ricardo";
 cliente1.cpf = '0001112223';

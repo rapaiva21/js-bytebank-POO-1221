@@ -15,6 +15,9 @@ export class ContaCorrente {
         return this._cliente
     }
 
+    get saldo() {
+        return this._saldo;
+    }
     
     sacar(valor){
         if(this._saldo >= valor){
@@ -34,6 +37,5 @@ export class ContaCorrente {
         const valorSacado = this.sacar(valor);
         conta.depositar(valorSacado);
     }
-
 
 }

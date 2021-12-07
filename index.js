@@ -26,11 +26,14 @@ conta2.sacar(100);
 contaCorrenteRicardo.depositar(200);
 console.log('   ');
 console.log(`Alice tem ${conta2._saldo}`);
-console.log(`Ricardo tem ${contaCorrenteRicardo._saldo}`)
+console.log(`Ricardo tem ${contaCorrenteRicardo._saldo}`);
 console.log('   ');
 console.log('TRANSFERENCIA DE ALICE PARA RICARDO (250)');
 conta2.transferir(250, contaCorrenteRicardo);
 console.log(`Alice tem ${conta2._saldo}`);
-console.log(`Ricardo tem ${contaCorrenteRicardo._saldo}`)
-
-
+console.log(`Ricardo tem ${contaCorrenteRicardo._saldo}`);
+console.log('   ');
+console.log('TESTE COM SET E GET');
+console.log(conta2._cliente);
+console.log('usando o get:');
+console.log(conta2.cliente);

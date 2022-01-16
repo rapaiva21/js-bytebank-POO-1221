@@ -1,12 +1,20 @@
 {
   "name": "js-bytebank-poo-1221",
   "version": "1.0.0",
-  "description": "",
   "main": "y",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "rapaiva (with Alura)",
   "license": "ISC",
-  "type": "module"
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rapaiva21/js-bytebank-POO-1221.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rapaiva21/js-bytebank-POO-1221/issues"
+  },
+  "homepage": "https://github.com/rapaiva21/js-bytebank-POO-1221#readme",
+  "description": ""
 }
